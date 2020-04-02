@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="node_modules/nouislider/distribute/nouislider.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      <div class="container">
+         
+                  <video id="video" class="screen responsive-video"  poster="img/poster.png">
+                    <source src="videos/gone.mp4" type="video/mp4">
+                </video>
+             
+              <div class="control">
+               
+                
+                    <i id="play" class="material-icons circle green">play_arrow</i>
+                 
+                    <i id="pause"  class="material-icons circle red hide">pause</i>
+                    <i id="stop" class="material-icons circle red">stop</i>
+                    <!-- <div id="test-slider"></div> -->
+                    <p class="range-field">
+                        <input type="range" id="progress" min="0" max="100" />
+                      </p>
+                      <span id="timestamp" class="timestamp">00:00</span>
+                
+             
+          </div>
+      </div>
+       
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="node_modules/nouislider/distribute/nouislider.js"></script>
+    <script src="index.js">  </script>
+</body>
+</html>
